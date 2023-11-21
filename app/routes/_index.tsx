@@ -1,5 +1,5 @@
 import type { MetaFunction } from "@remix-run/cloudflare";
-import { Dropdown } from '../components/ElectionTracker';
+import { Election } from '../components/ElectionTracker';
 
 export const meta: MetaFunction = () => {
   return [
@@ -10,9 +10,6 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1 className="text-center text-[5rem] text-orange-500">Jai Vinayaka</h1>
-      <Dropdown />
-    </div>
+    <Election />
   );
 }
