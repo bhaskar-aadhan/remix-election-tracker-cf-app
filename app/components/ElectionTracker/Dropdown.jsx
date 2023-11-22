@@ -7,9 +7,9 @@ import {
     SelectValue,
 } from "~/components/ui/select"
 
-const Dropdown = () => {
+const Dropdown = ({sx}) => {
     return (
-        <div>
+        <div className={`${sx}`}>
             <Select>
                 <SelectTrigger className="w-[180px]">
                     <SelectValue placeholder="Telangana" />

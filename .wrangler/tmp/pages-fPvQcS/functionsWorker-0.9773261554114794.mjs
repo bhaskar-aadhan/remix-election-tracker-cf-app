@@ -33367,7 +33367,7 @@ __export(root_exports, {
   default: () => App,
   links: () => links
 });
-var tailwind_default = "/build/_assets/tailwind-LKGQ4IG5.css";
+var tailwind_default = "/build/_assets/tailwind-VFSULGFH.css";
 var import_jsx_dev_runtime2 = __toESM(require_jsx_dev_runtime(), 1);
 var links = () => [
   { rel: "stylesheet", href: tailwind_default },
@@ -33441,7 +33441,7 @@ __export(index_exports, {
 var import_react3 = __toESM(require_react(), 1);
 var import_jsx_dev_runtime3 = __toESM(require_jsx_dev_runtime(), 1);
 var Election = () => /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "w-full h-screen font__nunitosans flex flex-col", style: { background: "linear-gradient( -80deg , #d7e9ff, #7db3ff, #d7e9ff)" }, children: [
-  /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "info-bar-container w-full bg-[#003D75] ps-8 pe-6", style: { alignSelf: "flex-start" }, children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(InfoBar_default, {}, void 0, false, {
+  /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "info-bar-container block md:hidden  w-full bg-[#003D75] ps-8 pe-6", style: { alignSelf: "flex-start" }, children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(InfoBar_default, {}, void 0, false, {
     fileName: "app/components/ElectionTracker/Election.jsx",
     lineNumber: 9,
     columnNumber: 9
@@ -33450,7 +33450,7 @@ var Election = () => /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", 
     lineNumber: 8,
     columnNumber: 7
   }, void 0),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "result-cards-container flex-1 flex justify-center content-center gap-5 flex-wrap", children: [
+  /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "result-cards-container hidden flex-1 md:flex justify-center content-center gap-5 flex-wrap", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Card_default, { w: "30%" }, void 0, false, {
       fileName: "app/components/ElectionTracker/Election.jsx",
       lineNumber: 12,
@@ -39877,7 +39877,7 @@ function Index() {
     columnNumber: 5
   }, this);
 }
-var assets_manifest_default = { entry: { module: "/build/entry.client-VGQVXII7.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-EN7NEHUT.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BALKE3M7.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-7PCZGUIR.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: true, caseSensitive: void 0, module: "/build/routes/_index-P4S7NFBO.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false } }, version: "30e344f5", hmr: { runtime: "/build/_shared\\chunk-BALKE3M7.js", timestamp: 1700636255424 }, url: "/build/manifest-30E344F5.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-VGQVXII7.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-EN7NEHUT.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BALKE3M7.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-FCUN5GZU.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: true, caseSensitive: void 0, module: "/build/routes/_index-GZBAQQYW.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false } }, version: "36f4c19c", hmr: { runtime: "/build/_shared\\chunk-BALKE3M7.js", timestamp: 1700636724430 }, url: "/build/manifest-36F4C19C.js" };
 var mode = "development";
 var assetsBuildDirectory = "public\\build";
 var future = { v3_fetcherPersist: false };
@@ -40382,7 +40382,7 @@ var jsonError = async (request, env, _ctx, middlewareCtx) => {
 var middleware_miniflare3_json_error_default = jsonError;
 var wrap = void 0;
 
-// ../.wrangler/tmp/bundle-4IKOLu/middleware-insertion-facade.js
+// ../.wrangler/tmp/bundle-fB7SbE/middleware-insertion-facade.js
 var envWrappers = [wrap].filter(Boolean);
 var facade = {
   ...pages_template_worker_default,
@@ -40394,7 +40394,7 @@ var facade = {
 };
 var middleware_insertion_facade_default = facade;
 
-// ../.wrangler/tmp/bundle-4IKOLu/middleware-loader.entry.ts
+// ../.wrangler/tmp/bundle-fB7SbE/middleware-loader.entry.ts
 var __Facade_ScheduledController__ = class {
   constructor(scheduledTime, cron, noRetry) {
     this.scheduledTime = scheduledTime;
