@@ -1,6 +1,6 @@
 import React from 'react';
 import { InfoBar, Card, Dropdown } from '.';
-import { aadhanLogo } from '../../assets/images';
+import { aadhanLogo, aadhanAppLogo } from '../../assets/images';
 
 const Election = ({viewportWidth}) => {
   return (
@@ -23,7 +23,7 @@ const Election = ({viewportWidth}) => {
       </div>
       <div className='w-[90%] flex md:hidden justify-between items-center my-3'>
         <Dropdown sx={'text-white'} />
-        <img src={aadhanLogo} alt="aadhan logo" />
+        <img src={aadhanAppLogo} alt="aadhan logo" />
       </div>
       <div className="result-cards-container flex md:hidden flex-1 justify-center content-start gap-5 flex-wrap">
         <Card w={'90%'} viewportWidth={viewportWidth} />

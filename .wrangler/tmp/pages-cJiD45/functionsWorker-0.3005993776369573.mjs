@@ -33440,7 +33440,7 @@ __export(index_exports, {
 });
 var import_react29 = __toESM(require_react(), 1);
 var import_react3 = __toESM(require_react(), 1);
-var aadhan_logo_default = "/build/_assets/aadhan-logo-2DRKYB2I.svg";
+var aadhan_app_logo_default = "/build/_assets/aadhan-app-logo-BJC26TPD.svg";
 var import_jsx_dev_runtime3 = __toESM(require_jsx_dev_runtime(), 1);
 var Election = ({ viewportWidth }) => /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "w-full h-screen font__nunitosans flex flex-col items-center md:items bg-[#050D3E]", style: { background: `${viewportWidth > "768" ? "linear-gradient( -80deg , #d7e9ff, #7db3ff, #d7e9ff)" : "#050D3E"}` }, children: [
   /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "info-bar-container hidden  md:block w-full bg-[#003D75] ps-8 pe-6", style: { alignSelf: "flex-start" }, children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(InfoBar_default, {}, void 0, false, {
@@ -33503,7 +33503,7 @@ var Election = ({ viewportWidth }) => /* @__PURE__ */ (0, import_jsx_dev_runtime
       lineNumber: 25,
       columnNumber: 9
     }, void 0),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("img", { src: aadhan_logo_default, alt: "aadhan logo" }, void 0, false, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("img", { src: aadhan_app_logo_default, alt: "aadhan logo" }, void 0, false, {
       fileName: "app/components/ElectionTracker/Election.jsx",
       lineNumber: 26,
       columnNumber: 9
@@ -40114,7 +40114,7 @@ function Index() {
     columnNumber: 5
   }, this);
 }
-var assets_manifest_default = { entry: { module: "/build/entry.client-VGQVXII7.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-EN7NEHUT.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BALKE3M7.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-IT2UMTDK.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: true, caseSensitive: void 0, module: "/build/routes/_index-EQLH2AD2.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false } }, version: "252ba016", hmr: { runtime: "/build/_shared\\chunk-BALKE3M7.js", timestamp: 1700641914906 }, url: "/build/manifest-252BA016.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-VGQVXII7.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-EN7NEHUT.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BALKE3M7.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-IT2UMTDK.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: true, caseSensitive: void 0, module: "/build/routes/_index-GK5TX33O.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false } }, version: "892e586b", hmr: { runtime: "/build/_shared\\chunk-BALKE3M7.js", timestamp: 1700644167141 }, url: "/build/manifest-892E586B.js" };
 var mode = "development";
 var assetsBuildDirectory = "public\\build";
 var future = { v3_fetcherPersist: false };
@@ -40619,7 +40619,7 @@ var jsonError = async (request, env, _ctx, middlewareCtx) => {
 var middleware_miniflare3_json_error_default = jsonError;
 var wrap = void 0;
 
-// ../.wrangler/tmp/bundle-rTUcat/middleware-insertion-facade.js
+// ../.wrangler/tmp/bundle-Lgf513/middleware-insertion-facade.js
 var envWrappers = [wrap].filter(Boolean);
 var facade = {
   ...pages_template_worker_default,
@@ -40631,7 +40631,7 @@ var facade = {
 };
 var middleware_insertion_facade_default = facade;
 
-// ../.wrangler/tmp/bundle-rTUcat/middleware-loader.entry.ts
+// ../.wrangler/tmp/bundle-Lgf513/middleware-loader.entry.ts
 var __Facade_ScheduledController__ = class {
   constructor(scheduledTime, cron, noRetry) {
     this.scheduledTime = scheduledTime;
