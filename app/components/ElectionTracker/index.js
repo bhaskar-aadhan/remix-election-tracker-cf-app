@@ -1,9 +1,11 @@
 import Election from './Election';
-import Dropdown from "./Dropdown";
 import InfoBar from './InfoBar';
+import Dropdown from "./Dropdown";
+import Card from './Card';
 
 export{
     Election,
-    Dropdown,
     InfoBar,
+    Dropdown,
+    Card,
 }
