@@ -13,6 +13,10 @@
   border-radius: 7px;
 }
 
+.table__shadow{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import type { MetaFunction } from "@remix-run/cloudflare";
 import { Election } from '../components/ElectionTracker';
+import { WebscoketContext } from "~/services/context";
 
 export const meta: MetaFunction = () => {
   return [
@@ -10,6 +11,13 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  //viewport finder logic
   const [viewportWidth, setViewportWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
   const handleResize = () => {
     setViewportWidth(window.innerWidth);
@@ -24,7 +32,13 @@ export default function Index() {
       }
     }
   }, [])
+
+  if (!mounted) {
+    return null; // return this null to avoid hydration errors
+  }
   return (
-    <Election viewportWidth = {viewportWidth} />
+    <WebscoketContext>
+      <Election viewportWidth={viewportWidth} />
+    </WebscoketContext>
   );
 }

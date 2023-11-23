@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
 import {
     Select,
     SelectContent,
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from "~/components/ui/select"
+} from "~/components/ui/select";
 
-const Dropdown = ({sx}) => {
+const Dropdown = ({ sx }) => {
     return (
         <div className={`${sx}`}>
             <Select>
@@ -15,9 +15,7 @@ const Dropdown = ({sx}) => {
                     <SelectValue placeholder="Telangana" />
                 </SelectTrigger>
                 <SelectContent>
-                    <SelectItem value="light">Telangana</SelectItem>
-                    <SelectItem value="dark">Andhra Pradesh</SelectItem>
-                    <SelectItem value="system">Karnataka</SelectItem>
+                    <SelectItem value="light">1</SelectItem>
                 </SelectContent>
             </Select>
 
