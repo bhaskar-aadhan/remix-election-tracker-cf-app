@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { InfoBar, Card, Dropdown } from '.';
 import { aadhanLogo } from '../../assets/images';
 
@@ -36,4 +36,4 @@ const Election = ({ viewportWidth }) => {
   )
 }
 
-export default Election
+export default memo(Election)

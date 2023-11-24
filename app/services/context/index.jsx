@@ -1,11 +1,10 @@
 import { createContext, useEffect, useState } from 'react';
-import { addMagicFigureData } from '../ElectionServices';
 
 export const ElectionContext = createContext("aadhan");
 
 export const WebscoketContext = ({ children }) => {
     const [webSocketData, setWebSocketData] = useState(null);
-    const [data, setData] = useState(null)
+    const [ stateName, setSateName ] = useState("Teleagana")
 
     //WEBSOCKET
     useEffect(() => {
@@ -37,18 +36,11 @@ export const WebscoketContext = ({ children }) => {
         };
     }, [])
 
-    useEffect(()=>{
-            const data = addMagicFigureData(webSocketData?.[0]?.['states'])
-            setData(data)
-    }, [webSocketData])
-
-    console.log("magic figure data", data)
-
-    if (webSocketData === null || data === null) {
+    if (webSocketData === null) {
         return <div>Loading .................</div>
     }
     return (
-        <ElectionContext.Provider value={data}>
+        <ElectionContext.Provider value={[webSocketData, stateName, setSateName]}>
             {children}
         </ElectionContext.Provider>
     )
