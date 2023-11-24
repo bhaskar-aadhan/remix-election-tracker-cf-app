@@ -33367,7 +33367,7 @@ __export(root_exports, {
   default: () => App,
   links: () => links
 });
-var tailwind_default = "/build/_assets/tailwind-2PSPVHVS.css";
+var tailwind_default = "/build/_assets/tailwind-PKCVHXMT.css";
 var import_jsx_dev_runtime2 = __toESM(require_jsx_dev_runtime(), 1);
 var links = () => [
   { rel: "stylesheet", href: tailwind_default },
@@ -40188,9 +40188,14 @@ var PartyResults = ({ parties }) => /* @__PURE__ */ (0, import_jsx_dev_runtime11
       lineNumber: 18,
       columnNumber: 21
     }, void 0),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(TableHead, { className: "text-center text-white", children: "Total" }, void 0, false, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(TableHead, { className: "text-center text-white", children: "Lost" }, void 0, false, {
       fileName: "app/components/ElectionTracker/PartyResults.jsx",
       lineNumber: 19,
+      columnNumber: 21
+    }, void 0),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(TableHead, { className: "text-center text-white", children: "Total" }, void 0, false, {
+      fileName: "app/components/ElectionTracker/PartyResults.jsx",
+      lineNumber: 20,
       columnNumber: 21
     }, void 0)
   ] }, void 0, true, {
@@ -40203,33 +40208,53 @@ var PartyResults = ({ parties }) => /* @__PURE__ */ (0, import_jsx_dev_runtime11
     columnNumber: 13
   }, void 0),
   /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(TableBody, { children: parties.map((party) => /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(TableRow, { className: "bg-[#dff1df]", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(TableCell, { className: "font-medium text-black ps-3", children: party.name }, void 0, false, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(TableCell, { className: "font-medium text-black ps-3", children: /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("div", { className: "flex justify-start items-center gap-2", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("img", { className: "w-5 h-5 rounded-full", src: party.logo, alt: "" }, void 0, false, {
+        fileName: "app/components/ElectionTracker/PartyResults.jsx",
+        lineNumber: 28,
+        columnNumber: 29
+      }, void 0),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("p", { children: party.name }, void 0, false, {
+        fileName: "app/components/ElectionTracker/PartyResults.jsx",
+        lineNumber: 29,
+        columnNumber: 29
+      }, void 0)
+    ] }, void 0, true, {
       fileName: "app/components/ElectionTracker/PartyResults.jsx",
-      lineNumber: 25,
-      columnNumber: 21
-    }, void 0),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(TableCell, { className: "text-center text-black", children: "99" }, void 0, false, {
+      lineNumber: 27,
+      columnNumber: 25
+    }, void 0) }, void 0, false, {
       fileName: "app/components/ElectionTracker/PartyResults.jsx",
       lineNumber: 26,
       columnNumber: 21
     }, void 0),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(TableCell, { className: "text-center text-black", children: "99" }, void 0, false, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(TableCell, { className: "text-center text-black", children: party.leading }, void 0, false, {
       fileName: "app/components/ElectionTracker/PartyResults.jsx",
-      lineNumber: 27,
+      lineNumber: 32,
       columnNumber: 21
     }, void 0),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(TableCell, { className: "text-center text-[indigo]", children: "99" }, void 0, false, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(TableCell, { className: "text-center text-black", children: party.won }, void 0, false, {
       fileName: "app/components/ElectionTracker/PartyResults.jsx",
-      lineNumber: 28,
+      lineNumber: 33,
+      columnNumber: 21
+    }, void 0),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(TableCell, { className: "text-center text-[indigo]", children: party.lost }, void 0, false, {
+      fileName: "app/components/ElectionTracker/PartyResults.jsx",
+      lineNumber: 34,
+      columnNumber: 21
+    }, void 0),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(TableCell, { className: "text-center text-[indigo]", children: party.contested }, void 0, false, {
+      fileName: "app/components/ElectionTracker/PartyResults.jsx",
+      lineNumber: 35,
       columnNumber: 21
     }, void 0)
   ] }, party.name, true, {
     fileName: "app/components/ElectionTracker/PartyResults.jsx",
-    lineNumber: 24,
+    lineNumber: 25,
     columnNumber: 17
   }, void 0)) }, void 0, false, {
     fileName: "app/components/ElectionTracker/PartyResults.jsx",
-    lineNumber: 22,
+    lineNumber: 23,
     columnNumber: 13
   }, void 0)
 ] }, void 0, true, {
@@ -40257,7 +40282,7 @@ function Index() {
     columnNumber: 5
   }, this) : null;
 }
-var assets_manifest_default = { entry: { module: "/build/entry.client-PQHLPRL2.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-2XTCFI52.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-E76C4TDF.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-FMI3FGAQ.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: true, caseSensitive: void 0, module: "/build/routes/_index-QVOZHNLY.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false } }, version: "2c846bfa", hmr: { runtime: "/build/_shared/chunk-E76C4TDF.js", timestamp: 1700824995322 }, url: "/build/manifest-2C846BFA.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-PQHLPRL2.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-2XTCFI52.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-E76C4TDF.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-KFTFRTHM.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: true, caseSensitive: void 0, module: "/build/routes/_index-5XDLXAFT.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false } }, version: "0dbf832c", hmr: { runtime: "/build/_shared/chunk-E76C4TDF.js", timestamp: 1700826569516 }, url: "/build/manifest-0DBF832C.js" };
 var mode = "development";
 var assetsBuildDirectory = "public/build";
 var future = { v3_fetcherPersist: false };
@@ -40762,7 +40787,7 @@ var jsonError = async (request, env, _ctx, middlewareCtx) => {
 var middleware_miniflare3_json_error_default = jsonError;
 var wrap = void 0;
 
-// ../.wrangler/tmp/bundle-WUnjuu/middleware-insertion-facade.js
+// ../.wrangler/tmp/bundle-TESgeR/middleware-insertion-facade.js
 var envWrappers = [wrap].filter(Boolean);
 var facade = {
   ...pages_template_worker_default,
@@ -40774,7 +40799,7 @@ var facade = {
 };
 var middleware_insertion_facade_default = facade;
 
-// ../.wrangler/tmp/bundle-WUnjuu/middleware-loader.entry.ts
+// ../.wrangler/tmp/bundle-TESgeR/middleware-loader.entry.ts
 var __Facade_ScheduledController__ = class {
   constructor(scheduledTime, cron, noRetry) {
     this.scheduledTime = scheduledTime;
