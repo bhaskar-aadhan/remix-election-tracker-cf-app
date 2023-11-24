@@ -18,27 +18,27 @@ export default function Index() {
   }, []);
 
   //viewport finder logic
-  const [viewportWidth, setViewportWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
-  const handleResize = () => {
-    setViewportWidth(window.innerWidth);
-  };
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setViewportWidth(window.innerWidth);
-      window.addEventListener('resize', handleResize);
+  // const [viewportWidth, setViewportWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
+  // const handleResize = () => {
+  //   setViewportWidth(window.innerWidth);
+  // };
+  // useEffect(() => {
+  //   if (typeof window !== 'undefined') {
+  //     setViewportWidth(window.innerWidth);
+  //     window.addEventListener('resize', handleResize);
 
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      }
-    }
-  }, [])
+  //     return () => {
+  //       window.removeEventListener('resize', handleResize);
+  //     }
+  //   }
+  // }, [])
 
   if (!mounted) {
     return null; // return this null to avoid hydration errors
   }
   return (
     <WebscoketContext>
-      <Election viewportWidth={viewportWidth} />
+      <Election />
     </WebscoketContext>
   );
 }

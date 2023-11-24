@@ -1,9 +1,9 @@
 import aadhanLogo from  './aadhan-logo.svg';
 import aadhanAppLogo from  './aadhan-app-logo.svg';
-import hamburgerMenu from './hamburger-menu.svg';
+import downArrowIcon from './down-arrow.svg';
 
 export {
     aadhanLogo,
     aadhanAppLogo,
-    hamburgerMenu,
+    downArrowIcon
 }

@@ -4,7 +4,11 @@ export const ElectionContext = createContext("aadhan");
 
 export const WebscoketContext = ({ children }) => {
     const [webSocketData, setWebSocketData] = useState(null);
-    const [ stateName, setSateName ] = useState("Teleagana")
+    const [ stateName, setStateName ] = useState("Telangana")
+
+    useEffect(()=>{
+        console.log("window", window.FocusEvent)
+    }, [])
 
     //WEBSOCKET
     useEffect(() => {
@@ -40,7 +44,7 @@ export const WebscoketContext = ({ children }) => {
         return <div>Loading .................</div>
     }
     return (
-        <ElectionContext.Provider value={[webSocketData, stateName, setSateName]}>
+        <ElectionContext.Provider value={[webSocketData, stateName, setStateName]}>
             {children}
         </ElectionContext.Provider>
     )

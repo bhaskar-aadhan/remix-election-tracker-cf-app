@@ -8,7 +8,7 @@ import {
     TableRow,
 } from "~/components/ui/table";
 
-const PartyResults = () => {
+const PartyResults = ({parties}) => {
     return (
         <Table className="">
             <TableHeader>
@@ -20,12 +20,14 @@ const PartyResults = () => {
                 </TableRow>
             </TableHeader>
             <TableBody>
-                <TableRow className='bg-[#dff1df]'>
-                    <TableCell className="font-medium text-black ps-3">BRS</TableCell>
+                {parties.map((party)=>( 
+                <TableRow key={party['name']} className='bg-[#dff1df]'>
+                    <TableCell className="font-medium text-black ps-3">{party['name']}</TableCell>
                     <TableCell className="text-center text-black">99</TableCell>
                     <TableCell className="text-center text-black">99</TableCell>
                     <TableCell className="text-center text-[indigo]">99</TableCell>
                 </TableRow>
+                ))}
             </TableBody>
         </Table>
     )

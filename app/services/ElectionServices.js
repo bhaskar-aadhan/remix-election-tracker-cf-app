@@ -23,7 +23,14 @@ const getMagicFigureData = async(data ,stateName) => {
     return magicFigure
 }
 
+const getSateData = (data, stateName)=>{
+    const websocketData =  data[0]['states']
+    const stateData = websocketData.filter((state)=>state['name'] === stateName)
+    return stateData
+}
+
 export {
     addMagicFigureData,
     getMagicFigureData,
+    getSateData,
 }

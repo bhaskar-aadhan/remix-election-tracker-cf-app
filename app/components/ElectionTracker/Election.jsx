@@ -1,24 +1,26 @@
-import React, { memo } from 'react';
+import React, { memo, useContext } from 'react';
+import { ElectionContext } from '~/services/context';
+import { getSateData } from '~/services/ElectionServices';
 import { InfoBar, Card, Dropdown } from '.';
 import { aadhanLogo } from '../../assets/images';
 
-const Election = ({ viewportWidth }) => {
+const Election = () => {
+  const [webSocketData, stateName] = useContext(ElectionContext);
+  const stateData = getSateData(webSocketData, stateName)
+  console.log("sateData", stateData)
   return (
     <div className='w-full h-screen font__nunitosans flex flex-col items-center md:items bg-[#050D3E]' style={{ background: `linear-gradient( -80deg , #d7e9ff, #7db3ff, #d7e9ff)` }}>
       {/* pc */}
       <div className="info-bar-container hidden  md:block w-full bg-[#003D75] ps-8 pe-6" style={{ alignSelf: 'flex-start' }}>
         <InfoBar />
       </div>
-      <div className="result-cards-container hidden md:flex flex-1 justify-center content-center gap-x-8 gap-y-11 flex-wrap">
-        <Card w={'30%'} viewportWidth={viewportWidth} />
-        <Card w={'30%'} viewportWidth={viewportWidth} />
-        <Card w={'30%'} viewportWidth={viewportWidth} />
-        <Card w={'30%'} viewportWidth={viewportWidth} />
-        <Card w={'30%'} viewportWidth={viewportWidth} />
-        <Card w={'30%'} viewportWidth={viewportWidth} />
+      <div className="w-full result-cards-container hidden md:flex flex-1 justify-center content-center gap-x-8 gap-y-11 flex-wrap">
+        {stateData[0]['media_sources'].map((media) => (
+          <Card key={media['name']} w={'30%'} media={media['name']} parties={media['party_wise_data']} />
+        ))}
       </div>
       {/* mobile */}
-      <div className="info-bar-container block md:hidden w-full bg-[#003D75] ps-4 pe-2 py-1 mt-5" style={{ alignSelf: 'flex-start' }}>
+      {/* <div className="info-bar-container block md:hidden w-full bg-[#003D75] ps-4 pe-2 py-1 mt-5" style={{ alignSelf: 'flex-start' }}>
         <InfoBar />
       </div>
       <div className='w-[90%] flex md:hidden justify-between items-center my-3'>
@@ -26,12 +28,12 @@ const Election = ({ viewportWidth }) => {
         <img src={aadhanLogo} alt="aadhan logo" />
       </div>
       <div className="result-cards-container flex md:hidden flex-1 justify-center content-start gap-5 flex-wrap">
-        <Card w={'90%'} viewportWidth={viewportWidth} />
+        <Card w={'90%'} />
         <div className='flex justify-center items-center gap-2 my-2'>
           <p className='text-white'>Magic figure:</p>
           <div className='w-fit px-4 bg-[#FFA500] text-black rounded-md font-semibold'>60</div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
