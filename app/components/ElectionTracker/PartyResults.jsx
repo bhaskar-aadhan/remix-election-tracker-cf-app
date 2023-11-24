@@ -17,7 +17,7 @@ const PartyResults = ({parties}) => {
                     <TableHead className="text-center text-white">Leading</TableHead>
                     <TableHead className="text-center text-white">Won</TableHead>
                     <TableHead className="text-center text-white">Lost</TableHead>
-                    <TableHead className="text-center text-white">Total</TableHead>
+                    <TableHead className="text-center text-white">Con</TableHead>
                 </TableRow>
             </TableHeader>
             <TableBody>

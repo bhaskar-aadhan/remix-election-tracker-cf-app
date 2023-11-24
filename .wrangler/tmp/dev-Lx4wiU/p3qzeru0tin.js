@@ -40215,7 +40215,7 @@ var PartyResults = ({ parties }) => /* @__PURE__ */ (0, import_jsx_dev_runtime11
       lineNumber: 19,
       columnNumber: 21
     }, void 0),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(TableHead, { className: "text-center text-white", children: "Total" }, void 0, false, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(TableHead, { className: "text-center text-white", children: "Con" }, void 0, false, {
       fileName: "app/components/ElectionTracker/PartyResults.jsx",
       lineNumber: 20,
       columnNumber: 21
@@ -40304,7 +40304,7 @@ function Index() {
     columnNumber: 5
   }, this) : null;
 }
-var assets_manifest_default = { entry: { module: "/build/entry.client-PQHLPRL2.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-2XTCFI52.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-E76C4TDF.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-KFTFRTHM.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: true, caseSensitive: void 0, module: "/build/routes/_index-5XDLXAFT.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false } }, version: "0dbf832c", hmr: { runtime: "/build/_shared/chunk-E76C4TDF.js", timestamp: 1700826569516 }, url: "/build/manifest-0DBF832C.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-PQHLPRL2.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-2XTCFI52.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-E76C4TDF.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-KFTFRTHM.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: true, caseSensitive: void 0, module: "/build/routes/_index-HHP4J6TJ.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false } }, version: "5082f13d", hmr: { runtime: "/build/_shared/chunk-E76C4TDF.js", timestamp: 1700827289766 }, url: "/build/manifest-5082F13D.js" };
 var mode = "development";
 var assetsBuildDirectory = "public/build";
 var future = { v3_fetcherPersist: false };
