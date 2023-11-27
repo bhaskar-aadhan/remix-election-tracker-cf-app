@@ -33736,7 +33736,7 @@ __export(root_exports, {
   default: () => App,
   links: () => links
 });
-var tailwind_default = "/build/_assets/tailwind-H2DPG3TG.css";
+var tailwind_default = "/build/_assets/tailwind-PV43N46A.css";
 var import_jsx_dev_runtime2 = __toESM(require_jsx_dev_runtime(), 1);
 var links = () => [
   { rel: "stylesheet", href: tailwind_default },
@@ -33896,7 +33896,7 @@ var InfoBar = ({ sx }) => {
       let data = await getMagicFigureData(webSocketData, stateName);
       setMagicFigureData(data);
     })();
-  }, [webSocketData, stateName]), console.log("magicFigureData: ", magicFigureData, "stateName: ", stateName, "webSocketData: ", webSocketData), /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "text-white text-[14px] flex-1 flex justify-start items-center flex-wrap md:flex-nowrap gap-5 p-1 max-w-[1280px] font__nunitosans", children: [
+  }, [webSocketData, stateName]), console.log("magicFigureData: ", magicFigureData, "stateName: ", stateName, "webSocketData: ", webSocketData), /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "text-white text-[14px] flex-1 flex justify-start items-center flex-wrap md:flex-nowrap gap-x-1  md:gap-x-5 md:gap-y-5 p-1 max-w-[1280px] font__nunitosans", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "flex justify-center items-center gap-2", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "w-[0.4rem] h-[0.4rem] bg-red-500 rounded-full animate-pulse" }, void 0, false, {
         fileName: "app/components/ElectionTracker/InfoBar.jsx",
@@ -40678,7 +40678,7 @@ var mobile = () => /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("div", {
   columnNumber: 5
 }, void 0);
 var mobile_default = mobile;
-var assets_manifest_default = { entry: { module: "/build/entry.client-THOU6PY7.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-YL3BAG2V.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-E76C4TDF.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-CIMA54CJ.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: true, caseSensitive: void 0, module: "/build/routes/_index-TJP25NPD.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/mobile": { id: "routes/mobile", parentId: "root", path: "mobile", index: void 0, caseSensitive: void 0, module: "/build/routes/mobile-UK6EQROG.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false } }, version: "b36274cb", hmr: { runtime: "/build/_shared/chunk-E76C4TDF.js", timestamp: 1701078578799 }, url: "/build/manifest-B36274CB.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-THOU6PY7.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-YL3BAG2V.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-E76C4TDF.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-N6AI2C7V.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: true, caseSensitive: void 0, module: "/build/routes/_index-TRSFJWXH.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/mobile": { id: "routes/mobile", parentId: "root", path: "mobile", index: void 0, caseSensitive: void 0, module: "/build/routes/mobile-UK6EQROG.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false } }, version: "5e339940", hmr: { runtime: "/build/_shared/chunk-E76C4TDF.js", timestamp: 1701078967742 }, url: "/build/manifest-5E339940.js" };
 var mode = "development";
 var assetsBuildDirectory = "public/build";
 var future = { v3_fetcherPersist: false };
