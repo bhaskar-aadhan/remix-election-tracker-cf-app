@@ -27,12 +27,12 @@ export const WebscoketContext = ({ children }) => {
                 console.error('WebSocket error:', error);
             };
             socket.onclose = (event) => {
+                handleWebsocket();
                 if (event.wasClean) {
                     console.log(`WebSocket connection closed cleanly, code=${event.code}, reason=${event.reason}`);
                 } else {
                     console.error('WebSocket connection abruptly closed');
                 }
-                handleWebsocket();
             };
         }
         handleWebsocket();
