@@ -57,9 +57,6 @@ export const WebscoketContext = ({ children }) => {
             setWebSocketData(wsData)
             console.log("websocket data: ", wsData, typeof (wsData))
         };
-        socket.onerror = (error) => {
-            console.error('WebSocket error:', error);
-        };
         socket.onclose = (event) => {
             
             if (event.wasClean) {
@@ -68,6 +65,9 @@ export const WebscoketContext = ({ children }) => {
                 console.error('WebSocket connection abruptly closed');
                 setTimeout(initializeWebSocket, 1000);
             }
+        };
+        socket.onerror = (error) => {
+            console.error('WebSocket error:', error);
         };
 
         const sendHeartbeat = () => {
