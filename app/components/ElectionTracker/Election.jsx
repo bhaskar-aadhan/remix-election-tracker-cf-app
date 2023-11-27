@@ -1,7 +1,7 @@
 import React, { memo, useContext } from 'react';
 import { ElectionContext } from '~/services/context';
 import { getSateData } from '~/services/ElectionServices';
-import { InfoBar, Card, Dropdown } from '.';
+import { InfoBar, Card, Download } from '.';
 import { aadhanLogo } from '../../assets/images';
 
 const Election = () => {
@@ -9,14 +9,15 @@ const Election = () => {
   const stateData = getSateData(webSocketData, stateName)
   console.log("sateData", stateData)
   return (
-    <div className='w-full h-screen font__nunitosans flex flex-col items-center md:items bg-[#050D3E]' style={{ background: `linear-gradient( -80deg , #d7e9ff, #7db3ff, #d7e9ff)` }}>
+    <div className='w-full min-h-screen font__nunitosans flex flex-col items-center bg-[#050D3E]' style={{ background: `linear-gradient( -80deg , #d7e9ff, #7db3ff, #d7e9ff)` }}>
       {/* pc */}
-      <div className="info-bar-container hidden  md:block w-full bg-[#003D75] ps-8 pe-6" style={{ alignSelf: 'flex-start' }}>
+      <div className="info-bar-container w-full flex items-center  bg-[#003D75] ps-8 pe-6" style={{ alignSelf: 'flex-start' }}>
         <InfoBar />
+        <Download />
       </div>
-      <div className="w-full result-cards-container hidden md:flex flex-1 justify-center content-center gap-x-8 gap-y-11 flex-wrap">
+      <div className="w-full result-cards-container my-5 md:my-0 flex flex-1 justify-center content-center gap-y-5 md:gap-x-8 md:gap-y-11 flex-wrap overflow-y-auto">
         {stateData[0]['media_sources'].map((media) => (
-          <Card key={media['name']} w={'30%'} media={media['name']} parties={media['party_wise_data']} />
+          <Card key={media['name']} sx={`w-[90%] mx-auto md:w-[30%]`} media={media['name']} parties={media['party_wise_data']} />
         ))}
       </div>
       {/* mobile */}

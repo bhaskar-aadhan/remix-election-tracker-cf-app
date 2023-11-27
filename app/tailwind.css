@@ -17,6 +17,10 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.btn__shadow{
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.30);
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

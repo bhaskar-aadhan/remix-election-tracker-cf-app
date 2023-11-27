@@ -16,8 +16,7 @@ const PartyResults = ({parties}) => {
                     <TableHead className="text-white ps-3">Party</TableHead>
                     <TableHead className="text-center text-white">Leading</TableHead>
                     <TableHead className="text-center text-white">Won</TableHead>
-                    <TableHead className="text-center text-white">Lost</TableHead>
-                    <TableHead className="text-center text-white">Con</TableHead>
+                    <TableHead className="text-center text-white">Total</TableHead>
                 </TableRow>
             </TableHeader>
             <TableBody>
@@ -31,8 +30,7 @@ const PartyResults = ({parties}) => {
                     </TableCell>
                     <TableCell className="text-center text-black">{party['leading']}</TableCell>
                     <TableCell className="text-center text-black">{party['won']}</TableCell>
-                    <TableCell className="text-center text-[indigo]">{party['lost']}</TableCell>
-                    <TableCell className="text-center text-[indigo]">{party['contested']}</TableCell>
+                    <TableCell className="text-center text-[indigo]">{party['leading'] + party['won']}</TableCell>
                 </TableRow>
                 ))}
             </TableBody>
