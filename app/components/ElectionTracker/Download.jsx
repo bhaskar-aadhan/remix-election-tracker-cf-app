@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from "@remix-run/react";
 import platform from 'platform';
+import { aadhanAppLogo } from '~/assets/images';
 
 const Download = ({ sx }) => {
     const [appLink, setAppLink] = useState("https://aadhan.in")
@@ -16,9 +17,12 @@ const Download = ({ sx }) => {
     }, [])
     console.log("platform", platform.os)
     return (
-        <button className={`${sx} w-fit ms-auto bg-[#EFEFEF] btn__shadow text-black py-1 px-3 text-[14px] outline-none border-[1px] border-[#151515] rounded-md font-semibold  hover:scale-95 transition ease-in-out duration-300 hover:border-indigo-300`}>
+        <div className='ms-auto mt-auto md:mt-0 mb-2 md:mb-0 flex flex-col md:flex-row gap-2'>
+        <img src={aadhanAppLogo} className='w-[50%] md:w-[30%] block ms-auto md:ms-0' alt="aadhan logo" />
+        <button className={`${sx} w-fit bg-[#EFEFEF] btn__shadow text-black py-1 px-3 text-[14px] outline-none border-[1px] border-[#151515] rounded-md font-semibold  hover:scale-95 transition ease-in-out duration-300 hover:border-indigo-300`}>
             <Link to={appLink}>Download now</Link>
         </button>
+        </div>
     )
 }
 
