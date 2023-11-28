@@ -3344,7 +3344,7 @@ See https://reactjs.org/link/invalid-hook-call for tips about how to debug and f
         var dispatcher = resolveDispatcher();
         return dispatcher.useReducer(reducer, initialArg, init);
       }
-      function useRef7(initialValue) {
+      function useRef8(initialValue) {
         var dispatcher = resolveDispatcher();
         return dispatcher.useRef(initialValue);
       }
@@ -3877,7 +3877,7 @@ Check the top-level render call using <` + parentName + ">.");
         toArray,
         only: onlyChild
       };
-      exports.Children = Children3, exports.Component = Component3, exports.Fragment = REACT_FRAGMENT_TYPE, exports.Profiler = REACT_PROFILER_TYPE, exports.PureComponent = PureComponent, exports.StrictMode = REACT_STRICT_MODE_TYPE, exports.Suspense = REACT_SUSPENSE_TYPE, exports.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = ReactSharedInternals, exports.cloneElement = cloneElement$1, exports.createContext = createContext5, exports.createElement = createElement$1, exports.createFactory = createFactory, exports.createRef = createRef, exports.forwardRef = forwardRef9, exports.isValidElement = isValidElement2, exports.lazy = lazy, exports.memo = memo2, exports.startTransition = startTransition, exports.unstable_act = act, exports.useCallback = useCallback5, exports.useContext = useContext8, exports.useDebugValue = useDebugValue, exports.useDeferredValue = useDeferredValue, exports.useEffect = useEffect11, exports.useId = useId, exports.useImperativeHandle = useImperativeHandle, exports.useInsertionEffect = useInsertionEffect, exports.useLayoutEffect = useLayoutEffect4, exports.useMemo = useMemo7, exports.useReducer = useReducer, exports.useRef = useRef7, exports.useState = useState13, exports.useSyncExternalStore = useSyncExternalStore, exports.useTransition = useTransition, exports.version = ReactVersion, typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ < "u" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop == "function" && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
+      exports.Children = Children3, exports.Component = Component3, exports.Fragment = REACT_FRAGMENT_TYPE, exports.Profiler = REACT_PROFILER_TYPE, exports.PureComponent = PureComponent, exports.StrictMode = REACT_STRICT_MODE_TYPE, exports.Suspense = REACT_SUSPENSE_TYPE, exports.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = ReactSharedInternals, exports.cloneElement = cloneElement$1, exports.createContext = createContext5, exports.createElement = createElement$1, exports.createFactory = createFactory, exports.createRef = createRef, exports.forwardRef = forwardRef9, exports.isValidElement = isValidElement2, exports.lazy = lazy, exports.memo = memo2, exports.startTransition = startTransition, exports.unstable_act = act, exports.useCallback = useCallback5, exports.useContext = useContext8, exports.useDebugValue = useDebugValue, exports.useDeferredValue = useDeferredValue, exports.useEffect = useEffect11, exports.useId = useId, exports.useImperativeHandle = useImperativeHandle, exports.useInsertionEffect = useInsertionEffect, exports.useLayoutEffect = useLayoutEffect4, exports.useMemo = useMemo7, exports.useReducer = useReducer, exports.useRef = useRef8, exports.useState = useState13, exports.useSyncExternalStore = useSyncExternalStore, exports.useTransition = useTransition, exports.version = ReactVersion, typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ < "u" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop == "function" && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
     })();
   }
 });
@@ -26882,7 +26882,7 @@ Incoming: %s`, currentHookNameInDev, "[" + nextDeps.join(", ") + "]", "[" + prev
         var nextValue = nextCreate();
         return isInHookUserCodeInDev = false, workInProgressHook.memoizedState = [nextValue, nextDeps], nextValue;
       }
-      function useRef7(initialValue) {
+      function useRef8(initialValue) {
         currentlyRenderingComponent = resolveCurrentlyRenderingComponent(), workInProgressHook = createWorkInProgressHook();
         var previousRef = workInProgressHook.memoizedState;
         if (previousRef === null) {
@@ -26952,7 +26952,7 @@ Incoming: %s`, currentHookNameInDev, "[" + nextDeps.join(", ") + "]", "[" + prev
         useContext: useContext8,
         useMemo: useMemo7,
         useReducer,
-        useRef: useRef7,
+        useRef: useRef8,
         useState: useState13,
         useInsertionEffect: noop,
         useLayoutEffect: useLayoutEffect4,
@@ -30432,7 +30432,7 @@ Incoming: %s`, currentHookNameInDev, "[" + nextDeps.join(", ") + "]", "[" + prev
         var nextValue = nextCreate();
         return isInHookUserCodeInDev = false, workInProgressHook.memoizedState = [nextValue, nextDeps], nextValue;
       }
-      function useRef7(initialValue) {
+      function useRef8(initialValue) {
         currentlyRenderingComponent = resolveCurrentlyRenderingComponent(), workInProgressHook = createWorkInProgressHook();
         var previousRef = workInProgressHook.memoizedState;
         if (previousRef === null) {
@@ -30502,7 +30502,7 @@ Incoming: %s`, currentHookNameInDev, "[" + nextDeps.join(", ") + "]", "[" + prev
         useContext: useContext8,
         useMemo: useMemo7,
         useReducer,
-        useRef: useRef7,
+        useRef: useRef8,
         useState: useState13,
         useInsertionEffect: noop,
         useLayoutEffect: useLayoutEffect4,
@@ -31921,138 +31921,6 @@ var require_jsx_dev_runtime = __commonJS({
   "node_modules/react/jsx-dev-runtime.js"(exports, module) {
     "use strict";
     module.exports = require_react_jsx_dev_runtime_development();
-  }
-});
-var require_robust_websocket = __commonJS({
-  "node_modules/robust-websocket/robust-websocket.js"(exports, module) {
-    (function(factory, global2) {
-      typeof define == "function" && define.amd ? define(function() {
-        return factory(global2, navigator);
-      }) : typeof exports == "object" && typeof module == "object" ? module.exports = factory(global2, navigator) : global2.RobustWebSocket = factory(global2, typeof Mocha < "u" ? Mocha : navigator);
-    })(function(global2, navigator2) {
-      var RobustWebSocket2 = function(url, protocols, userOptions) {
-        var realWs = { close: function() {
-        } }, connectTimeout, self = this, attempts = 0, reconnects = -1, reconnectWhenOnlineAgain = false, explicitlyClosed = false, pendingReconnect, opts = Object.assign(
-          {},
-          RobustWebSocket2.defaultOptions,
-          typeof userOptions == "function" ? { shouldReconnect: userOptions } : userOptions
-        );
-        if (typeof opts.timeout != "number")
-          throw new Error("timeout must be the number of milliseconds to timeout a connection attempt");
-        if (typeof opts.shouldReconnect != "function")
-          throw new Error("shouldReconnect must be a function that returns the number of milliseconds to wait for a reconnect attempt, or null or undefined to not reconnect.");
-        ["bufferedAmount", "url", "readyState", "protocol", "extensions"].forEach(function(readOnlyProp) {
-          Object.defineProperty(self, readOnlyProp, {
-            get: function() {
-              return realWs[readOnlyProp];
-            }
-          });
-        });
-        function clearPendingReconnectIfNeeded() {
-          pendingReconnect && (clearTimeout(pendingReconnect), pendingReconnect = null);
-        }
-        var ononline = function(event) {
-          reconnectWhenOnlineAgain && (clearPendingReconnectIfNeeded(), reconnect(event));
-        }, onoffline = function() {
-          reconnectWhenOnlineAgain = true, realWs.close(1e3);
-        }, connectivityEventsAttached = false;
-        function detachConnectivityEvents() {
-          connectivityEventsAttached && (global2.removeEventListener("online", ononline), global2.removeEventListener("offline", onoffline), connectivityEventsAttached = false);
-        }
-        function attachConnectivityEvents() {
-          connectivityEventsAttached || (global2.addEventListener("online", ononline), global2.addEventListener("offline", onoffline), connectivityEventsAttached = true);
-        }
-        self.send = function() {
-          return realWs.send.apply(realWs, arguments);
-        }, self.close = function(code, reason) {
-          return typeof code != "number" && (reason = code, code = 1e3), clearPendingReconnectIfNeeded(), reconnectWhenOnlineAgain = false, explicitlyClosed = true, detachConnectivityEvents(), realWs.close(code, reason);
-        }, self.open = function() {
-          realWs.readyState !== WebSocket.OPEN && realWs.readyState !== WebSocket.CONNECTING && (clearPendingReconnectIfNeeded(), reconnectWhenOnlineAgain = false, explicitlyClosed = false, newWebSocket());
-        };
-        function reconnect(event) {
-          if (!opts.shouldReconnect.handle1000 && event.code === 1e3 || explicitlyClosed) {
-            attempts = 0;
-            return;
-          }
-          if (navigator2.onLine === false) {
-            reconnectWhenOnlineAgain = true;
-            return;
-          }
-          var delay = opts.shouldReconnect(event, self);
-          typeof delay == "number" && (pendingReconnect = setTimeout(newWebSocket, delay));
-        }
-        Object.defineProperty(self, "listeners", {
-          value: {
-            open: [function(event) {
-              connectTimeout && (clearTimeout(connectTimeout), connectTimeout = null), event.reconnects = ++reconnects, event.attempts = attempts, attempts = 0, reconnectWhenOnlineAgain = false;
-            }],
-            close: [reconnect]
-          }
-        }), Object.defineProperty(self, "attempts", {
-          get: function() {
-            return attempts;
-          },
-          enumerable: true
-        }), Object.defineProperty(self, "reconnects", {
-          get: function() {
-            return reconnects;
-          },
-          enumerable: true
-        });
-        function newWebSocket() {
-          var newUrl = typeof url == "function" ? url(self) : url;
-          pendingReconnect = null, realWs = new WebSocket(newUrl, protocols || void 0), realWs.binaryType = self.binaryType, attempts++, self.dispatchEvent(Object.assign(new CustomEvent("connecting"), {
-            attempts,
-            reconnects
-          })), connectTimeout = setTimeout(function() {
-            connectTimeout = null, detachConnectivityEvents(), self.dispatchEvent(Object.assign(new CustomEvent("timeout"), {
-              attempts,
-              reconnects
-            }));
-          }, opts.timeout), ["open", "close", "message", "error"].forEach(function(stdEvent) {
-            realWs.addEventListener(stdEvent, function(event) {
-              self.dispatchEvent(event);
-              var cb = self["on" + stdEvent];
-              if (typeof cb == "function")
-                return cb.apply(self, arguments);
-            });
-          }), opts.ignoreConnectivityEvents || attachConnectivityEvents();
-        }
-        opts.automaticOpen && newWebSocket();
-      };
-      return RobustWebSocket2.defaultOptions = {
-        // the time to wait before a successful connection
-        // before the attempt is considered to have timed out
-        timeout: 4e3,
-        // Given a CloseEvent or OnlineEvent and the RobustWebSocket state,
-        // should a reconnect be attempted? Return the number of milliseconds to wait
-        // to reconnect (or null or undefined to not), rather than true or false
-        shouldReconnect: function(event, ws) {
-          if (!(event.code === 1008 || event.code === 1011))
-            return [0, 3e3, 1e4][ws.attempts];
-        },
-        // Flag to control whether attachement to navigator online/offline events
-        // should be disabled.
-        ignoreConnectivityEvents: false,
-        // Create and connect the WebSocket when the instance is instantiated.
-        // Defaults to true to match standard WebSocket behavior
-        automaticOpen: true
-      }, RobustWebSocket2.prototype.binaryType = "blob", RobustWebSocket2.prototype.addEventListener = function(type, callback) {
-        type in this.listeners || (this.listeners[type] = []), this.listeners[type].push(callback);
-      }, RobustWebSocket2.prototype.removeEventListener = function(type, callback) {
-        if (type in this.listeners) {
-          for (var stack = this.listeners[type], i = 0, l = stack.length; i < l; i++)
-            if (stack[i] === callback) {
-              stack.splice(i, 1);
-              return;
-            }
-        }
-      }, RobustWebSocket2.prototype.dispatchEvent = function(event) {
-        if (event.type in this.listeners)
-          for (var stack = this.listeners[event.type], i = 0, l = stack.length; i < l; i++)
-            stack[i].call(this, event);
-      }, RobustWebSocket2;
-    }, typeof window < "u" ? window : typeof global < "u" ? global : exports);
   }
 });
 var require_platform = __commonJS({
@@ -33920,38 +33788,47 @@ __export(index_exports, {
 var import_react34 = __toESM(require_react(), 1);
 var import_react4 = __toESM(require_react(), 1);
 var import_react3 = __toESM(require_react(), 1);
-var import_robust_websocket = __toESM(require_robust_websocket(), 1);
 var import_jsx_dev_runtime3 = __toESM(require_jsx_dev_runtime(), 1);
 var ElectionContext = (0, import_react3.createContext)("aadhan");
 var WebscoketContext = ({ children }) => {
-  let [webSocketData, setWebSocketData] = (0, import_react3.useState)(null), [stateName, setStateName] = (0, import_react3.useState)("Telangana"), [isTx, setIsTx] = (0, import_react3.useState)(true);
+  let [webSocketData, setWebSocketData] = (0, import_react3.useState)(null), [stateName, setStateName] = (0, import_react3.useState)("Telangana"), ws = (0, import_react3.useRef)(null);
   return (0, import_react3.useEffect)(() => {
     console.log("window", window.FocusEvent);
   }, []), (0, import_react3.useEffect)(() => {
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    function handleVisibilityChange() {
+      document.visibilityState === "visible" && initializeWebSocket();
+    }
     let initializeWebSocket = () => {
-      let socket = new WebSocket("wss://stage-cmsapis.aadhan.in/election-results/ws");
-      console.log("intilization func runned"), socket.onopen = () => {
+      console.log("initializeWebSocket");
+      let socket = new WebSocket(
+        "wss://stage-cmsapis.aadhan.in/election-results/ws"
+      );
+      socket.onopen = () => {
         console.log("WebSocket connection opened");
       }, socket.onmessage = (event) => {
         let wsdata = event.data, wsData = JSON.parse(wsdata);
         setWebSocketData(wsData), console.log("websocket data: ", wsData, typeof wsData);
       }, socket.onclose = (event) => {
-        event.wasClean ? console.log(`WebSocket connection closed cleanly, code=${event.code}, reason=${event.reason}`) : (console.error("WebSocket connection abruptly closed"), setTimeout(() => initializeWebSocket, 1e3));
+        console.log(
+          `WebSocket connection closed code=${event.code}, reason=${event.reason}`
+        ), event.wasClean ? console.log(
+          `WebSocket connection closed cleanly, code=${event.code}, reason=${event.reason}`
+        ) : (console.error("WebSocket connection abruptly closed"), setTimeout(initializeWebSocket, 1e3));
       }, socket.onerror = (error) => {
         console.error("WebSocket error:", error);
       };
     };
-    document.addEventListener("visibilitychange", () => {
-      document.visibilityState === "visible" && initializeWebSocket();
-    }), initializeWebSocket();
+    return initializeWebSocket(), () => {
+    };
   }, []), webSocketData === null ? /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { children: "Loading ................." }, void 0, false, {
     fileName: "app/services/context/index.jsx",
-    lineNumber: 132,
-    columnNumber: 16
+    lineNumber: 106,
+    columnNumber: 12
   }, void 0) : /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(ElectionContext.Provider, { value: [webSocketData, stateName, setStateName], children }, void 0, false, {
     fileName: "app/services/context/index.jsx",
-    lineNumber: 135,
-    columnNumber: 9
+    lineNumber: 109,
+    columnNumber: 5
   }, void 0);
 };
 var getMagicFigure = (data) => {
@@ -40858,7 +40735,7 @@ var widget = () => /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", {
   columnNumber: 5
 }, void 0);
 var widget_default = widget;
-var assets_manifest_default = { entry: { module: "/build/entry.client-VQ5IJR6J.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-T26HTVR4.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-E76C4TDF.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-ECPHEQEB.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: true, caseSensitive: void 0, module: "/build/routes/_index-B4KRCN6M.js", imports: ["/build/_shared/chunk-2IKF7BNV.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/mobile": { id: "routes/mobile", parentId: "root", path: "mobile", index: void 0, caseSensitive: void 0, module: "/build/routes/mobile-JUTYWBEY.js", imports: ["/build/_shared/chunk-2IKF7BNV.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/widget": { id: "routes/widget", parentId: "root", path: "widget", index: void 0, caseSensitive: void 0, module: "/build/routes/widget-KFBFV4SM.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false } }, version: "846548c5", hmr: { runtime: "/build/_shared/chunk-E76C4TDF.js", timestamp: 1701169245676 }, url: "/build/manifest-846548C5.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-VQ5IJR6J.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-T26HTVR4.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-E76C4TDF.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-ECPHEQEB.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: true, caseSensitive: void 0, module: "/build/routes/_index-KJEVUMFB.js", imports: ["/build/_shared/chunk-2A637OJH.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/mobile": { id: "routes/mobile", parentId: "root", path: "mobile", index: void 0, caseSensitive: void 0, module: "/build/routes/mobile-W243IC2V.js", imports: ["/build/_shared/chunk-2A637OJH.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/widget": { id: "routes/widget", parentId: "root", path: "widget", index: void 0, caseSensitive: void 0, module: "/build/routes/widget-KFBFV4SM.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false } }, version: "8d93c7a9", hmr: { runtime: "/build/_shared/chunk-E76C4TDF.js", timestamp: 1701169885827 }, url: "/build/manifest-8D93C7A9.js" };
 var mode = "development";
 var assetsBuildDirectory = "public/build";
 var future = { v3_fetcherPersist: false };
@@ -41379,7 +41256,7 @@ var jsonError = async (request, env, _ctx, middlewareCtx) => {
 var middleware_miniflare3_json_error_default = jsonError;
 var wrap = void 0;
 
-// ../.wrangler/tmp/bundle-LUMj4b/middleware-insertion-facade.js
+// ../.wrangler/tmp/bundle-NjL6dw/middleware-insertion-facade.js
 var envWrappers = [wrap].filter(Boolean);
 var facade = {
   ...pages_template_worker_default,
@@ -41391,7 +41268,7 @@ var facade = {
 };
 var middleware_insertion_facade_default = facade;
 
-// ../.wrangler/tmp/bundle-LUMj4b/middleware-loader.entry.ts
+// ../.wrangler/tmp/bundle-NjL6dw/middleware-loader.entry.ts
 var __Facade_ScheduledController__ = class {
   constructor(scheduledTime, cron, noRetry) {
     this.scheduledTime = scheduledTime;
