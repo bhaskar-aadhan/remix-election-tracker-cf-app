@@ -47,8 +47,8 @@ export const WebscoketContext = ({ children }) => {
         // };
 
         //2
-
         // const socket = new WebSocket('wss://stage-cmsapis.aadhan.in/election-results/ws');
+
         const initializeWebSocket = () => {
             const socket = new WebSocket('wss://stage-cmsapis.aadhan.in/election-results/ws');
             console.log("intilization func runned")
@@ -76,7 +76,11 @@ export const WebscoketContext = ({ children }) => {
                 console.error('WebSocket error:', error);
             };
         }
-
+        document.addEventListener('visibilitychange', ()=>{
+            if(document.visibilityState === "visible"){
+                initializeWebSocket();
+            }
+        });
         // const sendHeartbeat = () => {
         //     if (socket.readyState === WebSocket.OPEN) {
         //         socket.send(JSON.stringify({ type: 'pong' }));
