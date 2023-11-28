@@ -3366,7 +3366,7 @@ See https://reactjs.org/link/invalid-hook-call for tips about how to debug and f
         var dispatcher = resolveDispatcher();
         return dispatcher.useReducer(reducer, initialArg, init);
       }
-      function useRef8(initialValue) {
+      function useRef7(initialValue) {
         var dispatcher = resolveDispatcher();
         return dispatcher.useRef(initialValue);
       }
@@ -3899,7 +3899,7 @@ Check the top-level render call using <` + parentName + ">.");
         toArray,
         only: onlyChild
       };
-      exports.Children = Children3, exports.Component = Component3, exports.Fragment = REACT_FRAGMENT_TYPE, exports.Profiler = REACT_PROFILER_TYPE, exports.PureComponent = PureComponent, exports.StrictMode = REACT_STRICT_MODE_TYPE, exports.Suspense = REACT_SUSPENSE_TYPE, exports.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = ReactSharedInternals, exports.cloneElement = cloneElement$1, exports.createContext = createContext5, exports.createElement = createElement$1, exports.createFactory = createFactory, exports.createRef = createRef, exports.forwardRef = forwardRef9, exports.isValidElement = isValidElement2, exports.lazy = lazy, exports.memo = memo2, exports.startTransition = startTransition, exports.unstable_act = act, exports.useCallback = useCallback5, exports.useContext = useContext8, exports.useDebugValue = useDebugValue, exports.useDeferredValue = useDeferredValue, exports.useEffect = useEffect11, exports.useId = useId, exports.useImperativeHandle = useImperativeHandle, exports.useInsertionEffect = useInsertionEffect, exports.useLayoutEffect = useLayoutEffect4, exports.useMemo = useMemo7, exports.useReducer = useReducer, exports.useRef = useRef8, exports.useState = useState13, exports.useSyncExternalStore = useSyncExternalStore, exports.useTransition = useTransition, exports.version = ReactVersion, typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ < "u" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop == "function" && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
+      exports.Children = Children3, exports.Component = Component3, exports.Fragment = REACT_FRAGMENT_TYPE, exports.Profiler = REACT_PROFILER_TYPE, exports.PureComponent = PureComponent, exports.StrictMode = REACT_STRICT_MODE_TYPE, exports.Suspense = REACT_SUSPENSE_TYPE, exports.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = ReactSharedInternals, exports.cloneElement = cloneElement$1, exports.createContext = createContext5, exports.createElement = createElement$1, exports.createFactory = createFactory, exports.createRef = createRef, exports.forwardRef = forwardRef9, exports.isValidElement = isValidElement2, exports.lazy = lazy, exports.memo = memo2, exports.startTransition = startTransition, exports.unstable_act = act, exports.useCallback = useCallback5, exports.useContext = useContext8, exports.useDebugValue = useDebugValue, exports.useDeferredValue = useDeferredValue, exports.useEffect = useEffect11, exports.useId = useId, exports.useImperativeHandle = useImperativeHandle, exports.useInsertionEffect = useInsertionEffect, exports.useLayoutEffect = useLayoutEffect4, exports.useMemo = useMemo7, exports.useReducer = useReducer, exports.useRef = useRef7, exports.useState = useState13, exports.useSyncExternalStore = useSyncExternalStore, exports.useTransition = useTransition, exports.version = ReactVersion, typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ < "u" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop == "function" && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
     })();
   }
 });
@@ -26904,7 +26904,7 @@ Incoming: %s`, currentHookNameInDev, "[" + nextDeps.join(", ") + "]", "[" + prev
         var nextValue = nextCreate();
         return isInHookUserCodeInDev = false, workInProgressHook.memoizedState = [nextValue, nextDeps], nextValue;
       }
-      function useRef8(initialValue) {
+      function useRef7(initialValue) {
         currentlyRenderingComponent = resolveCurrentlyRenderingComponent(), workInProgressHook = createWorkInProgressHook();
         var previousRef = workInProgressHook.memoizedState;
         if (previousRef === null) {
@@ -26974,7 +26974,7 @@ Incoming: %s`, currentHookNameInDev, "[" + nextDeps.join(", ") + "]", "[" + prev
         useContext: useContext8,
         useMemo: useMemo7,
         useReducer,
-        useRef: useRef8,
+        useRef: useRef7,
         useState: useState13,
         useInsertionEffect: noop,
         useLayoutEffect: useLayoutEffect4,
@@ -30454,7 +30454,7 @@ Incoming: %s`, currentHookNameInDev, "[" + nextDeps.join(", ") + "]", "[" + prev
         var nextValue = nextCreate();
         return isInHookUserCodeInDev = false, workInProgressHook.memoizedState = [nextValue, nextDeps], nextValue;
       }
-      function useRef8(initialValue) {
+      function useRef7(initialValue) {
         currentlyRenderingComponent = resolveCurrentlyRenderingComponent(), workInProgressHook = createWorkInProgressHook();
         var previousRef = workInProgressHook.memoizedState;
         if (previousRef === null) {
@@ -30524,7 +30524,7 @@ Incoming: %s`, currentHookNameInDev, "[" + nextDeps.join(", ") + "]", "[" + prev
         useContext: useContext8,
         useMemo: useMemo7,
         useReducer,
-        useRef: useRef8,
+        useRef: useRef7,
         useState: useState13,
         useInsertionEffect: noop,
         useLayoutEffect: useLayoutEffect4,
@@ -33813,7 +33813,7 @@ var import_react3 = __toESM(require_react(), 1);
 var import_jsx_dev_runtime3 = __toESM(require_jsx_dev_runtime(), 1);
 var ElectionContext = (0, import_react3.createContext)("aadhan");
 var WebscoketContext = ({ children }) => {
-  let [webSocketData, setWebSocketData] = (0, import_react3.useState)(null), [stateName, setStateName] = (0, import_react3.useState)("Telangana"), ws = (0, import_react3.useRef)(null);
+  let [webSocketData, setWebSocketData] = (0, import_react3.useState)(null), [stateName, setStateName] = (0, import_react3.useState)("Telangana");
   return (0, import_react3.useEffect)(() => {
     console.log("window", window.FocusEvent);
   }, []), (0, import_react3.useEffect)(() => {
@@ -33841,15 +33841,14 @@ var WebscoketContext = ({ children }) => {
         console.error("WebSocket error:", error);
       };
     };
-    return initializeWebSocket(), () => {
-    };
+    initializeWebSocket();
   }, []), webSocketData === null ? /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { children: "Loading ................." }, void 0, false, {
     fileName: "app/services/context/index.jsx",
-    lineNumber: 106,
+    lineNumber: 59,
     columnNumber: 12
   }, void 0) : /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(ElectionContext.Provider, { value: [webSocketData, stateName, setStateName], children }, void 0, false, {
     fileName: "app/services/context/index.jsx",
-    lineNumber: 109,
+    lineNumber: 62,
     columnNumber: 5
   }, void 0);
 };
@@ -40714,28 +40713,25 @@ __export(mobile_exports, {
 var import_react36 = __toESM(require_react(), 1);
 var import_react35 = __toESM(require_react(), 1);
 var import_jsx_dev_runtime14 = __toESM(require_jsx_dev_runtime(), 1);
-var TabBar = () => {
-  let [isTx, setIsTx] = (0, import_react35.useContext)(ElectionContext);
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("div", { className: "tabBar-container text-center rounded-sm w-[95%] mx-auto bg-white text-[#0165FF] flex justify-center items-center", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("div", { onClick: () => setIsTx(false), className: `entity-1 rounded-sm flex-1 ${isTx && "text-white bg-[#0165FF]"}`, children: "State" }, void 0, false, {
-      fileName: "app/components/ElectionTrackerMobile/TabBar.jsx",
-      lineNumber: 8,
-      columnNumber: 9
-    }, void 0),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("div", { className: `entity-2 rounded-sm flex-1 ${!isTx && "text-white bg-[#0165FF]"}`, children: "Constituency" }, void 0, false, {
-      fileName: "app/components/ElectionTrackerMobile/TabBar.jsx",
-      lineNumber: 9,
-      columnNumber: 9
-    }, void 0)
-  ] }, void 0, true, {
+var TabBar = () => /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("div", { className: "tabBar-container text-center rounded-sm w-[95%] mx-auto bg-white text-[#0165FF] flex justify-center items-center", children: [
+  /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("div", { className: "entity-1 rounded-sm flex-1 text-white bg-[#0165FF] py-1", children: "State" }, void 0, false, {
     fileName: "app/components/ElectionTrackerMobile/TabBar.jsx",
     lineNumber: 7,
-    columnNumber: 5
-  }, void 0);
-};
+    columnNumber: 9
+  }, void 0),
+  /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("div", { className: "entity-2 rounded-sm flex-1 py-1", children: "Constituency" }, void 0, false, {
+    fileName: "app/components/ElectionTrackerMobile/TabBar.jsx",
+    lineNumber: 8,
+    columnNumber: 9
+  }, void 0)
+] }, void 0, true, {
+  fileName: "app/components/ElectionTrackerMobile/TabBar.jsx",
+  lineNumber: 6,
+  columnNumber: 5
+}, void 0);
 var TabBar_default = TabBar;
 var import_jsx_dev_runtime15 = __toESM(require_jsx_dev_runtime(), 1);
-var mobile = () => /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("div", { className: "bg-[#050D3E]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)(TabBar_default, {}, void 0, false, {
+var mobile = () => /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("div", { className: "bg-[#050D3E] min-h-screen", children: /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)(TabBar_default, {}, void 0, false, {
   fileName: "app/routes/mobile.jsx",
   lineNumber: 7,
   columnNumber: 7
@@ -40757,7 +40753,7 @@ var widget = () => /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", {
   columnNumber: 5
 }, void 0);
 var widget_default = widget;
-var assets_manifest_default = { entry: { module: "/build/entry.client-VQ5IJR6J.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-T26HTVR4.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-E76C4TDF.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-ECPHEQEB.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: true, caseSensitive: void 0, module: "/build/routes/_index-KJEVUMFB.js", imports: ["/build/_shared/chunk-2A637OJH.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/mobile": { id: "routes/mobile", parentId: "root", path: "mobile", index: void 0, caseSensitive: void 0, module: "/build/routes/mobile-W243IC2V.js", imports: ["/build/_shared/chunk-2A637OJH.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/widget": { id: "routes/widget", parentId: "root", path: "widget", index: void 0, caseSensitive: void 0, module: "/build/routes/widget-KFBFV4SM.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false } }, version: "8d93c7a9", hmr: { runtime: "/build/_shared/chunk-E76C4TDF.js", timestamp: 1701169885827 }, url: "/build/manifest-8D93C7A9.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-VQ5IJR6J.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-T26HTVR4.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-E76C4TDF.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-ECPHEQEB.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: true, caseSensitive: void 0, module: "/build/routes/_index-O7MDMFAI.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/mobile": { id: "routes/mobile", parentId: "root", path: "mobile", index: void 0, caseSensitive: void 0, module: "/build/routes/mobile-63GABKC6.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/widget": { id: "routes/widget", parentId: "root", path: "widget", index: void 0, caseSensitive: void 0, module: "/build/routes/widget-KFBFV4SM.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false } }, version: "705a2b91", hmr: { runtime: "/build/_shared/chunk-E76C4TDF.js", timestamp: 1701171813662 }, url: "/build/manifest-705A2B91.js" };
 var mode = "development";
 var assetsBuildDirectory = "public/build";
 var future = { v3_fetcherPersist: false };
