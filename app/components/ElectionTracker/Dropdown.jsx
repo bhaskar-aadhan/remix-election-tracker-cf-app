@@ -15,7 +15,7 @@ import { downArrowIcon } from '~/assets/images';
 const Dropdown = ({ sx }) => {
     const [webSocketData, stateName, setStateName] = useContext(ElectionContext)
     return (
-        <div className={`${sx}`}>
+        <div className={`${sx} dropdown-ui-container`}>
             <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                     <Button className="min-w-[155px] justify-start" variant="outline">
