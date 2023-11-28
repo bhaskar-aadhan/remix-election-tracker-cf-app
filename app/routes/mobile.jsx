@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { TabBar } from '../components/ElectionTrackerMobile';
 
 const mobile = () => {
   return (
-    <div>mobile</div>
+    <div className='bg-[#050D3E]'>
+      <TabBar />
+    </div>
   )
 }
 
