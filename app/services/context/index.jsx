@@ -48,50 +48,51 @@ export const WebscoketContext = ({ children }) => {
 
         //2
 
-        const socket = new WebSocket('wss://stage-cmsapis.aadhan.in/election-results/ws');
+        // const socket = new WebSocket('wss://stage-cmsapis.aadhan.in/election-results/ws');
         const initializeWebSocket = () => {
-            // const socket = new WebSocket('wss://stage-cmsapis.aadhan.in/election-results/ws');
+            const socket = new WebSocket('wss://stage-cmsapis.aadhan.in/election-results/ws');
             console.log("intilization func runned")
             socket.onopen = () => {
                 console.log('WebSocket connection opened');
             };
             // sendHeartbeat();
+
+            socket.onmessage = (event) => {
+                const wsdata = event.data
+                const wsData = JSON.parse(wsdata)
+                setWebSocketData(wsData)
+                console.log("websocket data: ", wsData, typeof (wsData))
+            };
+            socket.onclose = (event) => {
+
+                if (event.wasClean) {
+                    console.log(`WebSocket connection closed cleanly, code=${event.code}, reason=${event.reason}`);
+                } else {
+                    console.error('WebSocket connection abruptly closed');
+                    setTimeout(() => initializeWebSocket, 1000);
+                }
+            };
+            socket.onerror = (error) => {
+                console.error('WebSocket error:', error);
+            };
         }
-        socket.onmessage = (event) => {
-            const wsdata = event.data
-            const wsData = JSON.parse(wsdata)
-            setWebSocketData(wsData)
-            console.log("websocket data: ", wsData, typeof (wsData))
-        };
-        socket.onclose = (event) => {
 
-            if (event.wasClean) {
-                console.log(`WebSocket connection closed cleanly, code=${event.code}, reason=${event.reason}`);
-            } else {
-                console.error('WebSocket connection abruptly closed');
-                setTimeout(() => initializeWebSocket, 1000);
-            }
-        };
-        socket.onerror = (error) => {
-            console.error('WebSocket error:', error);
-        };
-
-        const sendHeartbeat = () => {
-            if (socket.readyState === WebSocket.OPEN) {
-                socket.send(JSON.stringify({ type: 'pong' }));
-            }
-        };
+        // const sendHeartbeat = () => {
+        //     if (socket.readyState === WebSocket.OPEN) {
+        //         socket.send(JSON.stringify({ type: 'pong' }));
+        //     }
+        // };
 
         initializeWebSocket();
 
-        const heartbeatInterval = setInterval(() => sendHeartbeat, 30000);
+        // const heartbeatInterval = setInterval(() => sendHeartbeat, 30000);
 
-        return () => {
-            if (socket && socket.readyState === WebSocket.OPEN) {
-                socket.close();
-            }
-            clearInterval(heartbeatInterval)
-        };
+        // return () => {
+        //     if (socket && socket.readyState === WebSocket.OPEN) {
+        //         socket.close();
+        //     }
+        //     clearInterval(heartbeatInterval)
+        // };
 
         //3
 
@@ -127,7 +128,7 @@ export const WebscoketContext = ({ children }) => {
         return <div>Loading .................</div>
     }
     return (
-        <ElectionContext.Provider value={[webSocketData, stateName, setStateName, isTx, setIsTx]}>
+        <ElectionContext.Provider value={[webSocketData, stateName, setStateName]}>
             {children}
         </ElectionContext.Provider>
     )
