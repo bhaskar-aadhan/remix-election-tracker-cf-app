@@ -33714,7 +33714,7 @@ __export(root_exports, {
   default: () => App,
   links: () => links
 });
-var tailwind_default = "/build/_assets/tailwind-SAAIHOC4.css";
+var tailwind_default = "/build/_assets/tailwind-CTM73IV3.css";
 var import_jsx_dev_runtime2 = __toESM(require_jsx_dev_runtime(), 1);
 var links = () => [
   { rel: "stylesheet", href: tailwind_default },
@@ -40514,7 +40514,7 @@ var TableRow = React22.forwardRef(({ className, ...props }, ref) => /* @__PURE__
   {
     ref,
     className: cn(
-      "border-b transition-colors even:bg-[#dff1dfcf] data-[state=selected]:bg-muted",
+      "border-b-[0.5px] border-b-[#5e5c5c] transition-colors even:bg-[#293861] data-[state=selected]:bg-muted",
       className
     ),
     ...props
@@ -40589,22 +40589,22 @@ TableCaption.displayName = "TableCaption";
 var import_jsx_dev_runtime12 = __toESM(require_jsx_dev_runtime(), 1);
 var PartyResults = ({ parties }) => /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(Table, { className: "", children: [
   /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(TableHeader, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(TableRow, { className: "text-center bg-[#34509d] border-0 border-transparent", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(TableHead, { className: "text-white ps-3", children: "Party" }, void 0, false, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(TableHead, { className: "text-white text-[1rem] ps-4", children: "Party" }, void 0, false, {
       fileName: "app/components/ElectionTracker/PartyResults.jsx",
       lineNumber: 16,
       columnNumber: 21
     }, void 0),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(TableHead, { className: "text-center text-white", children: "Leading" }, void 0, false, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(TableHead, { className: "text-center text-[1rem] text-white", children: "Leading" }, void 0, false, {
       fileName: "app/components/ElectionTracker/PartyResults.jsx",
       lineNumber: 17,
       columnNumber: 21
     }, void 0),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(TableHead, { className: "text-center text-white", children: "Won" }, void 0, false, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(TableHead, { className: "text-center text-[1rem] text-white", children: "Won" }, void 0, false, {
       fileName: "app/components/ElectionTracker/PartyResults.jsx",
       lineNumber: 18,
       columnNumber: 21
     }, void 0),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(TableHead, { className: "text-center text-white", children: "Total" }, void 0, false, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(TableHead, { className: "text-center text-[1rem] text-white", children: "Total" }, void 0, false, {
       fileName: "app/components/ElectionTracker/PartyResults.jsx",
       lineNumber: 19,
       columnNumber: 21
@@ -40618,8 +40618,8 @@ var PartyResults = ({ parties }) => /* @__PURE__ */ (0, import_jsx_dev_runtime12
     lineNumber: 14,
     columnNumber: 13
   }, void 0),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(TableBody, { children: parties.map((party) => /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(TableRow, { className: "bg-[#dff1df]", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(TableCell, { className: "font-medium text-black ps-3", children: /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("div", { className: "flex justify-start items-center gap-2", children: [
+  /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(TableBody, { children: parties.map((party) => /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(TableRow, { className: "bg-[#1D2949] text-white", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(TableCell, { className: "font-medium text-white ps-5", children: /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("div", { className: "flex justify-start items-center gap-2", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("img", { className: "w-5 h-5 rounded-full", src: party.logo, alt: "" }, void 0, false, {
         fileName: "app/components/ElectionTracker/PartyResults.jsx",
         lineNumber: 27,
@@ -40639,17 +40639,17 @@ var PartyResults = ({ parties }) => /* @__PURE__ */ (0, import_jsx_dev_runtime12
       lineNumber: 25,
       columnNumber: 21
     }, void 0),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(TableCell, { className: "text-center text-black", children: party.leading }, void 0, false, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(TableCell, { className: "text-center text-[16px] text-white", children: party.leading }, void 0, false, {
       fileName: "app/components/ElectionTracker/PartyResults.jsx",
       lineNumber: 31,
       columnNumber: 21
     }, void 0),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(TableCell, { className: "text-center text-black", children: party.won }, void 0, false, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(TableCell, { className: "text-center text-[16px] text-white", children: party.won }, void 0, false, {
       fileName: "app/components/ElectionTracker/PartyResults.jsx",
       lineNumber: 32,
       columnNumber: 21
     }, void 0),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(TableCell, { className: "text-center text-[indigo]", children: party.leading + party.won }, void 0, false, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(TableCell, { className: "text-center text-[16px] text-[white]", children: party.leading + party.won }, void 0, false, {
       fileName: "app/components/ElectionTracker/PartyResults.jsx",
       lineNumber: 33,
       columnNumber: 21
@@ -41084,7 +41084,7 @@ var widget = () => /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", {
   columnNumber: 5
 }, void 0);
 var widget_default = widget;
-var assets_manifest_default = { entry: { module: "/build/entry.client-VQ5IJR6J.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-T26HTVR4.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-E76C4TDF.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-EZFTZRLI.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: true, caseSensitive: void 0, module: "/build/routes/_index-2SMV5ULU.js", imports: ["/build/_shared/chunk-W47YERIW.js", "/build/_shared/chunk-MU537YTH.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/mobile": { id: "routes/mobile", parentId: "root", path: "mobile", index: void 0, caseSensitive: void 0, module: "/build/routes/mobile-RKX353UW.js", imports: ["/build/_shared/chunk-W47YERIW.js", "/build/_shared/chunk-MU537YTH.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/widget": { id: "routes/widget", parentId: "root", path: "widget", index: void 0, caseSensitive: void 0, module: "/build/routes/widget-KCBS3QRW.js", imports: ["/build/_shared/chunk-MU537YTH.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false } }, version: "585bddf9", hmr: { runtime: "/build/_shared/chunk-E76C4TDF.js", timestamp: 1701237832250 }, url: "/build/manifest-585BDDF9.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-VQ5IJR6J.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-T26HTVR4.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-E76C4TDF.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-KGK65JBA.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: true, caseSensitive: void 0, module: "/build/routes/_index-MRM7OEWD.js", imports: ["/build/_shared/chunk-WITPLUJ4.js", "/build/_shared/chunk-MU537YTH.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/mobile": { id: "routes/mobile", parentId: "root", path: "mobile", index: void 0, caseSensitive: void 0, module: "/build/routes/mobile-QEFLWNOK.js", imports: ["/build/_shared/chunk-WITPLUJ4.js", "/build/_shared/chunk-MU537YTH.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/widget": { id: "routes/widget", parentId: "root", path: "widget", index: void 0, caseSensitive: void 0, module: "/build/routes/widget-KCBS3QRW.js", imports: ["/build/_shared/chunk-MU537YTH.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false } }, version: "b0ebb72c", hmr: { runtime: "/build/_shared/chunk-E76C4TDF.js", timestamp: 1701239017214 }, url: "/build/manifest-B0EBB72C.js" };
 var mode = "development";
 var assetsBuildDirectory = "public/build";
 var future = { v3_fetcherPersist: false };
@@ -41605,7 +41605,7 @@ var jsonError = async (request, env, _ctx, middlewareCtx) => {
 var middleware_miniflare3_json_error_default = jsonError;
 var wrap = void 0;
 
-// ../.wrangler/tmp/bundle-EIkKl9/middleware-insertion-facade.js
+// ../.wrangler/tmp/bundle-RJIcIW/middleware-insertion-facade.js
 var envWrappers = [wrap].filter(Boolean);
 var facade = {
   ...pages_template_worker_default,
@@ -41617,7 +41617,7 @@ var facade = {
 };
 var middleware_insertion_facade_default = facade;
 
-// ../.wrangler/tmp/bundle-EIkKl9/middleware-loader.entry.ts
+// ../.wrangler/tmp/bundle-RJIcIW/middleware-loader.entry.ts
 var __Facade_ScheduledController__ = class {
   constructor(scheduledTime, cron, noRetry) {
     this.scheduledTime = scheduledTime;
