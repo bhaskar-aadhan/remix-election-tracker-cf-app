@@ -11,10 +11,10 @@ import {
 	__facade_register__,
 } from "/Users/bhaskar/Documents/Aadhan/Other-Projects/remix-election-tracker-cf-app/node_modules/wrangler/templates/middleware/common.ts";
 
-import worker from "/Users/bhaskar/Documents/Aadhan/Other-Projects/remix-election-tracker-cf-app/.wrangler/tmp/bundle-gyIftD/middleware-insertion-facade.js";
+import worker from "/Users/bhaskar/Documents/Aadhan/Other-Projects/remix-election-tracker-cf-app/.wrangler/tmp/bundle-s9Q5hc/middleware-insertion-facade.js";
 
 // We need to preserve all of the exports from the worker
-export * from "/Users/bhaskar/Documents/Aadhan/Other-Projects/remix-election-tracker-cf-app/.wrangler/tmp/bundle-gyIftD/middleware-insertion-facade.js";
+export * from "/Users/bhaskar/Documents/Aadhan/Other-Projects/remix-election-tracker-cf-app/.wrangler/tmp/bundle-s9Q5hc/middleware-insertion-facade.js";
 
 class __Facade_ScheduledController__ implements ScheduledController {
 	#noRetry: ScheduledController["noRetry"];

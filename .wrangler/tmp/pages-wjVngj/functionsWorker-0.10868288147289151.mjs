@@ -33714,7 +33714,7 @@ __export(root_exports, {
   default: () => App,
   links: () => links
 });
-var tailwind_default = "/build/_assets/tailwind-SGXBA4XY.css";
+var tailwind_default = "/build/_assets/tailwind-OZANIGOQ.css";
 var import_jsx_dev_runtime2 = __toESM(require_jsx_dev_runtime(), 1);
 var links = () => [
   { rel: "stylesheet", href: tailwind_default },
@@ -40976,7 +40976,7 @@ var import_react39 = __toESM(require_react(), 1);
 var import_jsx_dev_runtime18 = __toESM(require_jsx_dev_runtime(), 1);
 var widget = () => /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "bg-[#262C42] min-h-screen relative text-white font__chivo overflow-hidden", children: [
   /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "widget-container h-screen pb-[32.5px] flex items-end overflow-hidden", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "widget-container-1 flex-1 p-[0.5rem]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "body-widget-container pt-2 font-medium flex justify-start items-center gap-3", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "widget-container-1 flex-1 p-[0.5rem]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "body-widget-container pt-2 font-semibold flex justify-start items-center gap-3", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("img", { src: vote_default, alt: "vote", className: "translate-y-8 z-0" }, void 0, false, {
         fileName: "app/routes/widget.jsx",
         lineNumber: 10,
@@ -41053,7 +41053,7 @@ var widget = () => /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", {
     columnNumber: 7
   }, void 0),
   /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "live-mobile-container px-2 fixed bottom-0 py-1 z-10 bg-[#3E4355] w-full flex justify-between items-center", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "live-widget-container bg-[red] text-[11px] w-fit px-2 rounded-lg my-1 flex justify-center items-center gap-1", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "live-widget-container font__poppins bg-[red] text-[11px] w-fit px-2 rounded-sm font-semibold my-1 flex justify-center items-center gap-1", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("span", { className: "inline-block w-[0.3rem] h-[0.3rem] animate-pulse bg-white rounded-full font-semibold" }, void 0, false, {
         fileName: "app/routes/widget.jsx",
         lineNumber: 26,
@@ -41092,7 +41092,7 @@ var widget = () => /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", {
   columnNumber: 5
 }, void 0);
 var widget_default = widget;
-var assets_manifest_default = { entry: { module: "/build/entry.client-VQ5IJR6J.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-T26HTVR4.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-E76C4TDF.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-XN3WU73R.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: true, caseSensitive: void 0, module: "/build/routes/_index-OEHKRHHO.js", imports: ["/build/_shared/chunk-WITPLUJ4.js", "/build/_shared/chunk-EO2R2MXZ.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/mobile": { id: "routes/mobile", parentId: "root", path: "mobile", index: void 0, caseSensitive: void 0, module: "/build/routes/mobile-MFFZBKMA.js", imports: ["/build/_shared/chunk-WITPLUJ4.js", "/build/_shared/chunk-EO2R2MXZ.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/widget": { id: "routes/widget", parentId: "root", path: "widget", index: void 0, caseSensitive: void 0, module: "/build/routes/widget-2S7OYT7I.js", imports: ["/build/_shared/chunk-EO2R2MXZ.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false } }, version: "e32e6c40", hmr: { runtime: "/build/_shared/chunk-E76C4TDF.js", timestamp: 1701246214290 }, url: "/build/manifest-E32E6C40.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-VQ5IJR6J.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-T26HTVR4.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-E76C4TDF.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-QVQVF5OT.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: true, caseSensitive: void 0, module: "/build/routes/_index-OEHKRHHO.js", imports: ["/build/_shared/chunk-WITPLUJ4.js", "/build/_shared/chunk-EO2R2MXZ.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/mobile": { id: "routes/mobile", parentId: "root", path: "mobile", index: void 0, caseSensitive: void 0, module: "/build/routes/mobile-MFFZBKMA.js", imports: ["/build/_shared/chunk-WITPLUJ4.js", "/build/_shared/chunk-EO2R2MXZ.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/widget": { id: "routes/widget", parentId: "root", path: "widget", index: void 0, caseSensitive: void 0, module: "/build/routes/widget-KGP6LSYL.js", imports: ["/build/_shared/chunk-EO2R2MXZ.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false } }, version: "25887ce1", hmr: { runtime: "/build/_shared/chunk-E76C4TDF.js", timestamp: 1701246634926 }, url: "/build/manifest-25887CE1.js" };
 var mode = "development";
 var assetsBuildDirectory = "public/build";
 var future = { v3_fetcherPersist: false };
@@ -41613,7 +41613,7 @@ var jsonError = async (request, env, _ctx, middlewareCtx) => {
 var middleware_miniflare3_json_error_default = jsonError;
 var wrap = void 0;
 
-// ../.wrangler/tmp/bundle-8BM3Ix/middleware-insertion-facade.js
+// ../.wrangler/tmp/bundle-AJlaxn/middleware-insertion-facade.js
 var envWrappers = [wrap].filter(Boolean);
 var facade = {
   ...pages_template_worker_default,
@@ -41625,7 +41625,7 @@ var facade = {
 };
 var middleware_insertion_facade_default = facade;
 
-// ../.wrangler/tmp/bundle-8BM3Ix/middleware-loader.entry.ts
+// ../.wrangler/tmp/bundle-AJlaxn/middleware-loader.entry.ts
 var __Facade_ScheduledController__ = class {
   constructor(scheduledTime, cron, noRetry) {
     this.scheduledTime = scheduledTime;
