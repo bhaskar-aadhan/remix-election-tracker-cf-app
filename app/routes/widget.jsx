@@ -27,7 +27,7 @@ const widget = () => {
         </div>
         <div className='flex justify-center items-center text-[13px] gap-1 text-white'>
           <p>Live Results </p>
-          <p className='translate-y-[1px]'>&rarr;</p>
+          <p className=''>&rarr;</p>
         </div>
       </div>
     </div>

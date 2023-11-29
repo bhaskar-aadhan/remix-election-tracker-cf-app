@@ -41070,7 +41070,7 @@ var widget = () => /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", {
         lineNumber: 29,
         columnNumber: 11
       }, void 0),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("p", { className: "translate-y-[1px]", children: "\u2192" }, void 0, false, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("p", { className: "", children: "\u2192" }, void 0, false, {
         fileName: "app/routes/widget.jsx",
         lineNumber: 30,
         columnNumber: 11
@@ -41091,7 +41091,7 @@ var widget = () => /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", {
   columnNumber: 5
 }, void 0);
 var widget_default = widget;
-var assets_manifest_default = { entry: { module: "/build/entry.client-VQ5IJR6J.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-T26HTVR4.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-E76C4TDF.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-TSBN7BAA.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: true, caseSensitive: void 0, module: "/build/routes/_index-N24OD6DT.js", imports: ["/build/_shared/chunk-WITPLUJ4.js", "/build/_shared/chunk-C2ECV7TG.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/mobile": { id: "routes/mobile", parentId: "root", path: "mobile", index: void 0, caseSensitive: void 0, module: "/build/routes/mobile-WCQCO5AX.js", imports: ["/build/_shared/chunk-WITPLUJ4.js", "/build/_shared/chunk-C2ECV7TG.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/widget": { id: "routes/widget", parentId: "root", path: "widget", index: void 0, caseSensitive: void 0, module: "/build/routes/widget-3OS5VVSA.js", imports: ["/build/_shared/chunk-C2ECV7TG.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false } }, version: "14f44eca", hmr: { runtime: "/build/_shared/chunk-E76C4TDF.js", timestamp: 1701244239364 }, url: "/build/manifest-14F44ECA.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-VQ5IJR6J.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-T26HTVR4.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-E76C4TDF.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-TSBN7BAA.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: true, caseSensitive: void 0, module: "/build/routes/_index-N24OD6DT.js", imports: ["/build/_shared/chunk-WITPLUJ4.js", "/build/_shared/chunk-C2ECV7TG.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/mobile": { id: "routes/mobile", parentId: "root", path: "mobile", index: void 0, caseSensitive: void 0, module: "/build/routes/mobile-WCQCO5AX.js", imports: ["/build/_shared/chunk-WITPLUJ4.js", "/build/_shared/chunk-C2ECV7TG.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/widget": { id: "routes/widget", parentId: "root", path: "widget", index: void 0, caseSensitive: void 0, module: "/build/routes/widget-SDG5JWZB.js", imports: ["/build/_shared/chunk-C2ECV7TG.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false } }, version: "64114431", hmr: { runtime: "/build/_shared/chunk-E76C4TDF.js", timestamp: 1701244405490 }, url: "/build/manifest-64114431.js" };
 var mode = "development";
 var assetsBuildDirectory = "public/build";
 var future = { v3_fetcherPersist: false };
@@ -41612,7 +41612,7 @@ var jsonError = async (request, env, _ctx, middlewareCtx) => {
 var middleware_miniflare3_json_error_default = jsonError;
 var wrap = void 0;
 
-// ../.wrangler/tmp/bundle-0vZSvn/middleware-insertion-facade.js
+// ../.wrangler/tmp/bundle-DTeDgq/middleware-insertion-facade.js
 var envWrappers = [wrap].filter(Boolean);
 var facade = {
   ...pages_template_worker_default,
@@ -41624,7 +41624,7 @@ var facade = {
 };
 var middleware_insertion_facade_default = facade;
 
-// ../.wrangler/tmp/bundle-0vZSvn/middleware-loader.entry.ts
+// ../.wrangler/tmp/bundle-DTeDgq/middleware-loader.entry.ts
 var __Facade_ScheduledController__ = class {
   constructor(scheduledTime, cron, noRetry) {
     this.scheduledTime = scheduledTime;
