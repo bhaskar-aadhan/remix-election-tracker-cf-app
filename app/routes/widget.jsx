@@ -1,5 +1,5 @@
 import React from 'react';
-import { indiaMapImg, voteImg, vottingBoothImg } from '../assets/images';
+import { chevronright, indiaMapImg, voteImg, vottingBoothImg } from '../assets/images';
 
 const widget = () => {
   return (
@@ -27,7 +27,7 @@ const widget = () => {
         </div>
         <div className='flex justify-center items-center text-[13px] gap-1 text-white'>
           <p>Live Results </p>
-          <p className=''>&rarr;</p>
+          <img src={chevronright} alt="chevron right" />
         </div>
       </div>
     </div>
