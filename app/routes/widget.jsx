@@ -4,7 +4,7 @@ import { chevronright, indiaMapImg, voteImg, vottingBoothImg } from '../assets/i
 const widget = () => {
   return (
     <div className='bg-[#262C42] min-h-screen relative text-white font__chivo overflow-hidden'>
-      <div className="widget-container h-screen mb-[32.5px] flex items-end">
+      <div className="widget-container h-screen pb-[32.5px] flex items-end overflow-hidden">
       <div className="widget-container-1 flex-1 p-[0.5rem]">
         <div className="body-widget-container pt-2 flex justify-start items-center gap-3">
           <img src={voteImg} alt="vote" className='translate-y-8 z-0' />
