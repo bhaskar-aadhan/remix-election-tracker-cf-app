@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState} from "react";
+import { createContext, useEffect, useState } from "react";
 
 export const ElectionContext = createContext("aadhan");
 
@@ -56,7 +56,13 @@ export const WebscoketContext = ({ children }) => {
   }, []);
 
   if (webSocketData === null) {
-    return <div>Loading .................</div>;
+    return (
+      <div className="min-h-screen grid place-content-center" style={{ background: `linear-gradient( -80deg , #d7e9ff, #7db3ff, #d7e9ff)` }}>
+        <div>
+          <img src={""} alt="aadhan logo" />
+        </div>
+      </div>
+    )
   }
   return (
     <ElectionContext.Provider value={[webSocketData, stateName, setStateName]}>

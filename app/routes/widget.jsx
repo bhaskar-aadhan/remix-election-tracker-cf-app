@@ -21,13 +21,13 @@ const widget = () => {
         <img src={indiaMapImg} alt="bharath map" className='w-[75%]' />
       </div>
       </div>
-      <div className="live-mobile-container px-2 fixed bottom-0 py-1 z-10 bg-[#3E4355] w-full flex justify-between items-center">
+      <div className="live-mobile-container px-2 absolute bottom-0 py-1 z-10 bg-[#3E4355] w-full flex justify-between items-center">
         <div className="live-widget-container bg-[red] text-[11px] w-fit px-2 rounded-lg my-1 flex justify-center items-center gap-1">
           <span className='inline-block w-[0.3rem] h-[0.3rem] animate-pulse bg-white rounded-full font-semibold'></span> LIVE
         </div>
         <div className='flex justify-center items-center text-[13px] gap-1 text-white'>
           <p>Live Results </p>
-          <img src={chevronright} alt="chevron right" />
+          <p className='translate-y-[1px]'>&rarr;</p>
         </div>
       </div>
     </div>
