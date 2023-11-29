@@ -33736,7 +33736,7 @@ __export(root_exports, {
   default: () => App,
   links: () => links
 });
-var tailwind_default = "/build/_assets/tailwind-KOVXS7Y3.css";
+var tailwind_default = "/build/_assets/tailwind-7NVGMUCJ.css";
 var import_jsx_dev_runtime2 = __toESM(require_jsx_dev_runtime(), 1);
 var links = () => [
   { rel: "stylesheet", href: tailwind_default },
@@ -40997,8 +40997,8 @@ __export(widget_exports, {
 var import_react39 = __toESM(require_react(), 1);
 var import_jsx_dev_runtime18 = __toESM(require_jsx_dev_runtime(), 1);
 var widget = () => /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "bg-[#262C42] min-h-screen relative text-white font__chivo overflow-hidden", children: [
-  /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "widget-container mb-[32.5px] flex ", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "widget-container-1 flex-1 p-[0.5rem]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "body-widget-container pt-2 flex justify-center items-center gap-3", children: [
+  /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "widget-container h-screen mb-[32.5px] flex items-end", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "widget-container-1 flex-1 p-[0.5rem]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "body-widget-container pt-2 flex justify-start items-center gap-3", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("img", { src: vote_default, alt: "vote", className: "translate-y-8 z-0" }, void 0, false, {
         fileName: "app/routes/widget.jsx",
         lineNumber: 10,
@@ -41114,7 +41114,7 @@ var widget = () => /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", {
   columnNumber: 5
 }, void 0);
 var widget_default = widget;
-var assets_manifest_default = { entry: { module: "/build/entry.client-VQ5IJR6J.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-T26HTVR4.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-E76C4TDF.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-6XCVHGJC.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: true, caseSensitive: void 0, module: "/build/routes/_index-OEHKRHHO.js", imports: ["/build/_shared/chunk-WITPLUJ4.js", "/build/_shared/chunk-EO2R2MXZ.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/mobile": { id: "routes/mobile", parentId: "root", path: "mobile", index: void 0, caseSensitive: void 0, module: "/build/routes/mobile-MFFZBKMA.js", imports: ["/build/_shared/chunk-WITPLUJ4.js", "/build/_shared/chunk-EO2R2MXZ.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/widget": { id: "routes/widget", parentId: "root", path: "widget", index: void 0, caseSensitive: void 0, module: "/build/routes/widget-5S2SFWLL.js", imports: ["/build/_shared/chunk-EO2R2MXZ.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false } }, version: "3489b1f9", hmr: { runtime: "/build/_shared/chunk-E76C4TDF.js", timestamp: 1701245296195 }, url: "/build/manifest-3489B1F9.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-VQ5IJR6J.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-T26HTVR4.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-E76C4TDF.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-5MQX5K64.js", imports: void 0, hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: true, caseSensitive: void 0, module: "/build/routes/_index-OEHKRHHO.js", imports: ["/build/_shared/chunk-WITPLUJ4.js", "/build/_shared/chunk-EO2R2MXZ.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/mobile": { id: "routes/mobile", parentId: "root", path: "mobile", index: void 0, caseSensitive: void 0, module: "/build/routes/mobile-MFFZBKMA.js", imports: ["/build/_shared/chunk-WITPLUJ4.js", "/build/_shared/chunk-EO2R2MXZ.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false }, "routes/widget": { id: "routes/widget", parentId: "root", path: "widget", index: void 0, caseSensitive: void 0, module: "/build/routes/widget-FRH3LGJE.js", imports: ["/build/_shared/chunk-EO2R2MXZ.js"], hasAction: false, hasLoader: false, hasErrorBoundary: false } }, version: "86e133f2", hmr: { runtime: "/build/_shared/chunk-E76C4TDF.js", timestamp: 1701245862653 }, url: "/build/manifest-86E133F2.js" };
 var mode = "development";
 var assetsBuildDirectory = "public/build";
 var future = { v3_fetcherPersist: false };
