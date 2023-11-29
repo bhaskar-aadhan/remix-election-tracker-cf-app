@@ -18,7 +18,7 @@ const widget = () => {
         </div>
       </div>
       <div className="widget-container-2 flex-1 flex justify-end items-end">
-        <img src={indiaMapImg} alt="bharath map" className='object-contain w-full h-full' />
+        <img src={indiaMapImg} alt="bharath map" className='object-contain w-full max-h-[135px]' />
       </div>
       </div>
       <div className="live-mobile-container px-2 fixed bottom-0 py-1 z-10 bg-[#3E4355] w-full flex justify-between items-center">
